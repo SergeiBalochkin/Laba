@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Список учеников</title>
+    <style>
+        #okno {
+            width: 350px;
+            height: 120px;
+            padding: 15px;
+            border: 3px solid #000000;
+            color: #000000;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+            #okno:target {
+                display: block;
+            }
+    </style>
+    <style>
+        #deleted {
+            width: 360px;
+            height: 55px;
+            text-align: center;
+            padding: 15px;
+            border: 3px solid #000000;
+            color: #000000;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+            #deleted:target {
+                display: block;
+            }
+        }
+    </style>
+    
+    <style>
+        #changed {
+            width: 350px;
+            height: 120px;
+            text-align: center;
+            padding: 15px;
+            border: 3px solid #000000;
+            color: #000000;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+            #changed:target {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="6%" height="8%" style="border-collapse: collapse;">
+        <tr style="background-color:darkgreen">
+            <td>
+                <strong>
+                    <center>
+                        <div id="okno">
+                        <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedOkno1">x</button>
+                            <table>
+                                <tr>Введите данные</tr>
+                                <tr><td align="right">ИФ</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Группа</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Возраст</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <td></td>
+                            </table>
+                            <b style="word-spacing: 20px"><input type="submit" value="Добавить"> <input type="submit" value="Отмена"></b>
+                        </div>
+                        <div class="btnOpenedOkno1" style="cursor:pointer;">Добавить</div>
+                    </center>
+                </strong>
+            </td>
+        </tr>
+           </table>
+    <table border="1" width="80.03%" height="100%" style="border-collapse: collapse;">
+       <tr>
+            <td width="50%"><strong><center>Имя Фамилия</center></strong></tdwidth="50%">
+            <td width="15%"><strong><center>Группа</center></strong></td>
+            <td width="15%"><strong><center>Возраст</center></strong></td>
+        </tr>
+    </table>
+        <table border="1" width="100%" height="100%" style="border-collapse: collapse;">
+        <tr>
+            <td width="50%"><center>Иван Васильев</center></td>
+            <td width="15%"><center>ДПИ-11</center></td>
+            <td width="15%"><center>18</center></td>
+            <td style="background-color:blue;">
+                <strong>
+                    <center>
+                        <div id="changed">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedChange1">x</button>
+                            <table>
+                                <tr>Измените данные</tr>
+                                <tr><td align="right">ИФ</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Группа</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Возраст</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <td></td>
+                            </table>
+                            <b style="word-spacing: 20px"><input type="submit" value="Изменить"> <input type="submit" value="Отмена"></b>
+                        </div>
+                        <div class="btnOpenedChange1" style="cursor:pointer;">Изменить</div>
+                    </center>
+                </strong>
+            </td>
+            <td style="background-color:red;">
+                <strong>
+                    <center>
+                        <div id="deleted">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedDelete1">x</button>
+                            <table>
+                                Вы действительно хотите удалить данные?
+                                <p style="word-spacing: 30px"><button>Да</button> <button>Нет</button></p>
+                            </table>
+                        </div>
+                        <div class="btnOpenedDelete1" style="cursor:pointer;">Удалить</div>
+                    </center>
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td><center>Феликс Монгомери</center></td>
+            <td><center>ДПИ-12</center></td>
+            <td><center>19</center></td>
+            <td style="background-color:blue;">
+                <strong>
+                    <center>
+                        <div id="changed">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedChange2">x</button>
+                            <table>
+                                <tr>Измените данные</tr>
+                                <tr><td align="right">ИФ</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Группа</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Возраст</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <td></td>
+                            </table>
+                            <b style="word-spacing: 20px"><input type="submit" value="Изменить"> <input type="submit" value="Отмена"></b>
+                        </div>
+                        <div class="btnOpenedChange2" style="cursor:pointer;">Изменить</div>
+                    </center>
+                </strong>
+            </td>
+            <td style="background-color:red;">
+                <strong>
+                    <center>
+                        <div id="deleted">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedDelete2">x</button>
+                            <table>
+                                Вы действительно хотите удалить данные?
+                                <p style="word-spacing: 30px"><button>Да</button> <button>Нет</button></p>
+                            </table>
+                        </div>
+                        <div class="btnOpenedDelete2" style="cursor:pointer;">Удалить</div>
+                    </center>
+                </strong>
+            </td>
+        </tr>
+        <tr>
+            <td><center>Кирилл Максимов</center></td>
+            <td><center>ДПИ-13</center></td>
+            <td><center>17</center></td>
+            <td width="30" style="background-color:blue;">
+                <strong>
+                    <center>
+                        <div id="changed">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedChange3">x</button>
+                            <table>
+                                <tr>Измените данные</tr>
+                                <tr><td align="right">ИФ</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Группа</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <tr><td align="right">Возраст</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                <td></td>
+                            </table>
+                            <b style="word-spacing: 20px"><input type="submit" value="Изменить"> <input type="submit" value="Отмена"></b>
+                        </div>
+                        <div class="btnOpenedChange3" style="cursor:pointer;">Изменить</div>
+                    </center>
+                </strong>
+            </td>
+            <td width="30" style="background-color:red;">
+                <strong>
+                    <center>
+                        <div id="deleted">
+                            <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedDelete3">x</button>
+                            <table>
+                                Вы действительно хотите удалить данные?
+                                <p style="word-spacing: 30px"><button>Да</button> <button>Нет</button></p>
+                            </table>
+                        </div>
+                        <div class="btnOpenedDelete3" style="cursor:pointer;">Удалить</div>
+                    </center>
+                </strong>
+            </td>
+        </tr>
+            </table>
+
+
+       <table border="1" width="6%" height="8%" style="border-collapse: collapse; border-radius: 10px;">
+           <tr style="background-color:darkgreen;">
+               <td>
+                   <strong>
+                       <center>
+                           <div id="okno">
+                               <button style="position: absolute; top: 0; right: 0; border-radius: 0px; cursor: pointer;" class="btnClosedOkno2">x</button>
+                               <table>
+                                   <tr>Введите данные</tr>
+                                   <tr><td align="right">ИФ</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                   <tr><td align="right">Группа</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                   <tr><td align="right">Возраст</td><td><input type="text" name="nickname" maxlength="70" size="30"></td></tr>
+                                   <td></td>
+                               </table>
+                               <b style="word-spacing: 20px"><input type="submit" value="Добавить"> <input type="submit" value="Отмена"></b>
+                           </div>
+                           <div class="btnOpenedOkno2" style="cursor:pointer;">Добавить</div>
+                       </center>
+                   </strong>
+               </td>
+           </tr>
+       </table>
+    <script src="script.js"></script>
+</body>
+</html>
