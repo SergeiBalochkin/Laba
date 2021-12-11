@@ -59,17 +59,13 @@ function myFunc() {
     var AddGroup = document.querySelector("#AddGroup").value
     var AddAge = document.querySelector("#AddAge").value
     var table = document.getElementById('table');    
-    var faucet1 = 1;    
+        
     var tr = document.createElement("tr");
-    if (faucet1 == 1) {        
-        tr.innerHTML = '<td><center>' + AddName + '</center></td><td><center>' + AddGroup + '</center></td><td><center>' + AddAge + '</center></td><td><center><button class="buttonChange1">Изменить</button><button class="buttonDelete1">Удалить</button></center></td>';
+            
+        tr.innerHTML = '<td><center>' + AddName + '</center></td><td><center>' + AddGroup + '</center></td><td><center>' + AddAge + '</center></td><td><center><button class="buttonChange1">РР·РјРµРЅРёС‚СЊ</button><button class="buttonDelete1">РЈРґР°Р»РёС‚СЊ</button></center></td>';
         table.appendChild(tr);
 
-    } else {
-
-        console.log('error');
-
-    }
+     
     const buttonOpenedChange = document.querySelector('.buttonChange1')
     buttonOpenedChange.addEventListener('click', openChangeElement)
     const buttonOpenedDelete = document.querySelector('.buttonDelete1')
@@ -87,15 +83,10 @@ function myFunc() {
         var AddName1 = document.querySelector("#AddName1").value
         var AddGroup1 = document.querySelector("#AddGroup1").value
         var AddAge1 = document.querySelector("#AddAge1").value
-        if (faucet1 == 1) {
-            tr.innerHTML = '<td><center>' + AddName1 + '</center></td><td><center>' + AddGroup1 + '</center></td><td><center>' + AddAge1 + '</center></td><td><center><button class="buttonChange1">Изменить</button><button class="buttonDelete1">Удалить</button></center></td>';
+        
+            tr.innerHTML = '<td><center>' + AddName1 + '</center></td><td><center>' + AddGroup1 + '</center></td><td><center>' + AddAge1 + '</center></td><td><center><button class="buttonChange1">РР·РјРµРЅРёС‚СЊ</button><button class="buttonDelete1">РЈРґР°Р»РёС‚СЊ</button></center></td>';
             table.appendChild(tr);
-
-        } else {
-
-            console.log('error');
-
-        }
+        
         const buttonOpenedChange = document.querySelector('.buttonChange1')
         buttonOpenedChange.addEventListener('click', openChangeElement)
         const buttonOpenedDelete = document.querySelector('.buttonDelete1')
@@ -126,4 +117,3 @@ buttonClosedOkno3.addEventListener('click', closeChangeElement)
 buttonClosedOkno4.addEventListener('click', closeChangeElement)
 buttonClosedOkno5.addEventListener('click', closeDeleteElement)
 buttonClosedOkno6.addEventListener('click', closeDeleteElement)
-
