@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Список учеников
+    </title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+
+<body>
+    <button class="buttonAdd1">Добавить</button>
+    <div id="addchange">
+        <button style="position: absolute; top: 0; right: 2px; border-radius: 0px; cursor: pointer; background-color: red; color: white;" class="btnClosedOkno1">x</button>
+        <table>
+
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Имя Фамилия</label>
+                        <input type="text" name="fullName" id="fullName" maxlength="70" size="46">
+                    </div>
+                    <div>
+                        <label>Возраст</label>
+                        <input type="text" name="Age" id="Age" maxlength="70" size="46">
+                    </div>
+                    <div>
+                        <label>Группа</label>
+                        <input type="text" name="Group" id="Group" maxlength="70" size="46">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input class="submit1" type="submit" value="Сохранить" style="position: absolute; left: 110px; cursor:pointer; background-color:darkgreen; color: white;">
+                    </div>
+                </form>
+                <button class="btnClosedOkno2" style="position: absolute; left: 210px; cursor:pointer; background-color: red; color: white;">Отмена</button>
+            </td>
+        </table>
+    </div>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Имя Фамилия</th>
+                            <th>Возраст</th>
+                            <th>Группа</th>
+                            <th>Редактирование</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button class="buttonAdd2">Добавить</button>
+        
+    
+    <script src="code.js"></script>
+</body>
+
+</html>
