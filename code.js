@@ -15,10 +15,6 @@ ButtonAdd2.addEventListener('click', openAddNewElement)
 submit1.addEventListener('click', closeAddNewElement)
 buttonClosedOkno1.addEventListener('click', closeAddNewElement)
 buttonClosedOkno2.addEventListener('click', closeAddNewElement)
-
-
-
-
 var selectedRow = null
 
 function onFormSubmit() {
@@ -50,8 +46,8 @@ function insertNewRecord(data) {
     cell3 = newRow.insertCell(2);
     cell3.innerHTML = data.Group;
     cell3 = newRow.insertCell(3);
-    cell3.innerHTML = `<a onClick="onEdit(this)"><center><button style="background-color: blue; color: white; cursor: pointer">Изменить</button></center></a>
-                       <a onClick="onDelete(this)"><center><button style="background-color: red; color: white; cursor: pointer">Удалить</button></center></a>`;
+    cell3.innerHTML = `<a onClick="onEdit(this)"><center><button style="background-color: blue; color: white; cursor: pointer">РР·РјРµРЅРёС‚СЊ</button></center></a>
+                       <a onClick="onDelete(this)"><center><button style="background-color: red; color: white; cursor: pointer">РЈРґР°Р»РёС‚СЊ</button></center></a>`;
     
     }
 
@@ -77,10 +73,9 @@ function updateRecord(formData) {
 }
 
 function onDelete(td) {
-    if (confirm('Вы действительно хотите удалить данные?')) {
+    if (confirm('Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ СѓРґР°Р»РёС‚СЊ РґР°РЅРЅС‹Рµ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("employeeList").deleteRow(row.rowIndex);
         resetForm();
     }
 }
-
